@@ -26,12 +26,13 @@
     .pricing-plan{
       display: flex;
       flex-direction: column;
+      flex: 1;
+      padding: 20px;
       align-items: center;
       justify-content: center;
       background-color: #e7e6e5;
       gap: 10px;
-      width: 300px;
-      flex-basis: 275px;
+      max-width: 300px;
       border-radius: 5%;
       border: 1px #007ca3 solid;
     }
@@ -41,6 +42,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      padding: 0%;
     }
 
     .plan-title{
@@ -73,6 +75,10 @@
       gap: 50px;
       height: 100%;
     }
+    .pricing-plan{
+      width: 250px;
+      flex-basis: 275px;
+    }
     }
   </style>
 </head>
@@ -81,7 +87,7 @@
   <div class="pricing-container">
     <div class="pricing-plan">
       <div class="plan-title">Basic</div>
-      <div class="plan-price">$9.99/month</div>
+      <div class="plan-price"> $9.99/month</div>
       <ul class="plan-features" >
         <li>✅ 10GB Storage</li>
         <li>✅ 1 User</li>
